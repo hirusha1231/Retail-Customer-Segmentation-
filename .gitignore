@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Ignore dataset files
+data/raw/*.xlsx
+data/raw/*.csv
+data/processed/*.csv
