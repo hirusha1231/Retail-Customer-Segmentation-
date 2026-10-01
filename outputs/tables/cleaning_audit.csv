@@ -1,0 +1,6 @@
+Stage,Rows_Retained,Rows_Dropped,Unique_Customers,Description
+0. Ingestion (Raw Data),541909,0,4372,Raw unedited data loaded directly from source repository.
+1. CustomerID Imputation Filter,406829,135080,4372,Filtered records missing CustomerID where behavioral linkage is impossible.
+2. Duplicate Deduplication,401604,5225,4372,Dropped exact duplicate transactions across all matching fields.
+3. Non-Merchandise Removal,399823,1781,4363,"Removed postage, discount adjustments, debt write-offs, and manual codes."
+4. Valid Positive Sales Cohort,391283,8540,4334,"Filtered out returns, zero/negative quantities, and unpriced promotions."

@@ -1,4 +1,5 @@
-Model,Silhouette,Davies-Bouldin,Calinski-Harabasz,Clusters
-K-Means (k=4),0.3371343622222519,1.010147208011302,3328.9939678047613,4
-Agglomerative (k=4),0.24191839925539654,1.1199582204014298,2615.0516294732906,4
-GMM (k=4),0.1739295489523567,1.719092105352129,2154.6781550081905,4
+Model,Silhouette,Davies-Bouldin,Calinski-Harabasz,Smallest_Cluster_%,Stability_ARI (Subsample)
+RFM 4-Quantile Baseline,0.1959,1.7956,2372.54,18.0,Deterministic (Rule-based)
+K-Means (k=4),0.3344,1.0175,3344.64,16.71,0.9176 ± 0.0379
+Agglomerative (k=4),0.2672,1.1444,2746.09,14.54,0.4200 ± 0.0624
+Gaussian Mixture (k=4),0.1721,1.7251,2154.39,19.17,0.9217 ± 0.0456
