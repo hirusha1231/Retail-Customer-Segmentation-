@@ -97,3 +97,10 @@ def audit_and_clean_data(filepath: str, return_audit: bool = False):
     if return_audit:
         return df_clean, audit_df, returns_df
     return df_clean
+
+def compute_file_sha256(filepath):
+  sha256_hash = hashlib.sha256()
+  with open(filepath, 'rb') as f:
+    for byte_block in iter(lambda: f.read(4096), b''):
+      sha256_hash.update(byte_block)
+  return sha256_hash.hexdigest()
